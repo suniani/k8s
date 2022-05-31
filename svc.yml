@@ -4,7 +4,7 @@ metadata:
   name: login-svc
   labels:
     app: login
-    version: 2.6.3
+    version: 2.6.2
 spec:
   type: NodePort
   ports:
@@ -13,5 +13,6 @@ spec:
     protocol: TCP
   selector:
       app: login
-      version: 2.6.3
+      version: 2.6.2
+      
      
