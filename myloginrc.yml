@@ -6,10 +6,12 @@ spec:
   replicas: 4
   selector:
     app: login
+    version: 2.6.1
   template:
    metadata:
      labels:
       app: login
+      version: 2.6.1
    spec:
      containers: 
      - name: login-container
