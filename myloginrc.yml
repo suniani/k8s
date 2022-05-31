@@ -6,15 +6,15 @@ spec:
   replicas: 4
   selector:
     app: login
-    version: 2.6.2
+    version: 2.6.3
   template:
    metadata:
      labels:
       app: login
-      version: 2.6.2
+      version: 2.6.3
    spec:
      containers: 
      - name: login-container
-       image: maha4iac/myonlinebooking:2
+       image: maha4iac/myonlinebooking:3
        ports: 
        - containerPort: 80
