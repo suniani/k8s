@@ -12,7 +12,7 @@ spec:
       app: login
    spec:
      containers: 
-       name: login-container
+     - name: login-container
        image: maha4iac/myonlinebooking:1
        ports: 
        - containerPort: 80
