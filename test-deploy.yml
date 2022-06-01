@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: javaapp-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: javaapp
+  template:
+    metadata:
+      labels:
+        app: javaapp
+    spec:
+     containers:
+     - name: javaapp-container
+       image:  maha4iac/myonlinebooking:2
+       ports:
+       - containerPort: 8080
